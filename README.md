@@ -35,12 +35,12 @@ OpenZeppelin gives us free contracts that they developed and audited to make sur
         ```
 3. **Function Description**
 
-- The above described function uses different methods defined in the OpenZeppelin contracts.
-- `_mint` refers to a function from the smart contract that mints tokens.
-- `msg.sender` refers that the one who is calling this function is the one that should get these tokens.
-- We are only creating 50 tokens. However, solidity does not have decimals, they use very large numbers. For this reason we must multiply our selected amount by 10^18 (in solidity ^ is **).
-- Then we apply `Ownable` to the function so the mint of token is restricted only to the creator. Ownable is also a method from the OpenZeppelin contract.
-- `onlyOwner` is called a “modifier”. Only the person who created this contract is allowed to call this mint function. As you can see we are importing onlyModifier in line 5.
+    - The above described function uses different methods defined in the OpenZeppelin contracts.
+    - `_mint` refers to a function from the smart contract that mints tokens.
+    - `msg.sender` refers that the one who is calling this function is the one that should get these tokens.
+    - We are only creating 50 tokens. However, solidity does not have decimals, they use very large numbers. For this reason we must multiply our selected amount by 10^18 (in solidity ^ is **).
+    - Then we apply `Ownable` to the function so the mint of token is restricted only to the creator. Ownable is also a method from the OpenZeppelin contract.
+    - `onlyOwner` is called a “modifier”. Only the person who created this contract is allowed to call this mint function. As you can see we are importing onlyModifier in line 5.
 
 
 4. **Deploy the Token**
